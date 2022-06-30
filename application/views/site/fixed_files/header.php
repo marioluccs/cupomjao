@@ -362,7 +362,7 @@ div .caption {
         margin-left: 18%!important;
     }
     .logoimage {
-        width: 35%!important;
+        width: 25%!important;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
