@@ -1,0 +1,644 @@
+<?php $this->load->view('site/fixed_files/header'); ?>
+
+<?php
+
+
+$this->db->from('banners');
+$this->db->where('status', 1);
+$this->db->where('posicao', 2);
+$this->db->order_by('id', 'rand');
+$get = $this->db->get();
+$banner1 = @$get->result_array();
+$banner1_count = $get->num_rows();
+
+
+
+$this->db->from('banners');
+$this->db->where('status', 1);
+$this->db->where('posicao', 3);
+$this->db->order_by('id', 'rand');
+$get = $this->db->get();
+$banner2 = @$get->result_array();
+$banner2_count = $get->num_rows();
+
+
+$this->db->from('produtos');
+$this->db->where('id', $this->uri->segment(2));
+$this->db->where('status', 1);
+$this->db->order_by('id', 'desc');
+$get = $this->db->get();
+
+
+if($get->num_rows() <=0):
+header("Location:/".CAMINHO);
+    else:
+$valor = $get->result_array()[0];
+
+
+        $this->db->from('empresas');
+        $this->db->where('id', $valor['empresas']);
+        $this->db->where('status', 1);
+        $this->db->order_by('id', 'desc');
+        $gets = $this->db->get();
+        if($gets->num_rows() <=0):
+            header("Location:/".CAMINHO);
+        else:
+            $empresa = $gets->result_array()[0];
+
+endif;
+endif;
+ ?>
+    <section class="section white-backgorund">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12"><h5><?php echo $valor['breve_descricao'];?></h5></div>
+            <hr class="col-lg-12">
+            <div class="col-lg-12">
+                <div class="row">
+
+                    <div class="<?php if($banner1_count > 0 or $banner2_count > 0): echo 'col-sm-5'; else: echo 'col-sm-7'; endif;?>  col-xs-12">
+                        <div id="carousel-offer" class="carousel slide" data-ride="carousel">
+                            <div id="sync1" class="owl-carousel owl-theme thumbs">
+
+
+<?php if(!empty($valor['image'])):?>
+                                <div class="item">
+                                    <img src="<?php echo base_url('web/imagens/'.$valor['image']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';">
+                                </div>
+<?php endif;?>
+
+                                <?php if(!empty($valor['image2'])):?>
+
+                                <div class="item">
+                                    <img src="<?php echo base_url('web/imagens/'.$valor['image2']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';">
+                                </div>
+                                <?php endif;?>
+
+
+                                <?php if(!empty($valor['image3'])):?>
+
+                                <div class="item">
+                                    <img src="<?php echo base_url('web/imagens/'.$valor['image3']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';">
+                                </div>
+                                <?php endif;?>
+
+
+                                <?php if(!empty($valor['image4'])):?>
+
+                                <div class="item">
+                                    <img src="<?php echo base_url('web/imagens/'.$valor['image4']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';">
+                                </div>
+                                <?php endif;?>
+
+
+                                <?php if(!empty($valor['image5'])):?>
+
+                                <div class="item">
+                                    <img src="<?php echo base_url('web/imagens/'.$valor['image5']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';">
+                                </div>
+                                <?php endif;?>
+
+
+                                <?php if(!empty($valor['image6'])):?>
+
+                                <div class="item">
+                                    <img src="<?php echo base_url('web/imagens/'.$valor['image6']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';">
+                                </div>
+                                <?php endif;?>
+
+
+
+                            </div>
+
+                            <div id="sync2" class="owl-carousel owl-theme" sync=".thumbs" style="margin-top: 4px; display: none;">
+                                <?php if(!empty($valor['image'])):?>
+
+                                <div onclick="carrosels('0');" class="item" style="cursor:pointer;">
+                                    <img
+                                            src="<?php echo base_url('web/imagens/'.$valor['image']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';"
+                                            style="width: 100px;height:70px;">
+                                </div>
+                                <?php endif;?>
+
+                                <?php if(!empty($valor['image2'])):?>
+
+                                <div onclick="carrosels('0');" class="item" style="cursor:pointer;">
+                                    <img
+                                            src="<?php echo base_url('web/imagens/'.$valor['image2']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';"
+                                            style="width: 100px;height:70px;">
+                                </div>
+                                <?php endif;?>
+
+                                <?php if(!empty($valor['image3'])):?>
+
+                                <div onclick="carrosels('0');" class="item" style="cursor:pointer;">
+                                    <img
+                                            src="<?php echo base_url('web/imagens/'.$valor['image3']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';"
+                                            style="width: 100px;height:70px;">
+                                </div>
+                                <?php endif;?>
+
+                                <?php if(!empty($valor['image4'])):?>
+
+                                <div onclick="carrosels('0');" class="item" style="cursor:pointer;">
+                                    <img
+                                            src="<?php echo base_url('web/imagens/'.$valor['image4']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';"
+                                            style="width: 100px;height:70px;">
+                                </div>
+                                <?php endif;?>
+
+                                <?php if(!empty($valor['image5'])):?>
+
+                                <div onclick="carrosels('0');" class="item" style="cursor:pointer;">
+                                    <img
+                                            src="<?php echo base_url('web/imagens/'.$valor['image5']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';"
+                                            style="width: 100px;height:70px;">
+                                </div>
+                                <?php endif;?>
+
+                                <?php if(!empty($valor['image6'])):?>
+
+                                <div onclick="carrosels('0');" class="item" style="cursor:pointer;">
+                                    <img
+                                            src="<?php echo base_url('web/imagens/'.$valor['image6']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';"
+                                            style="width: 100px;height:70px;">
+                                </div>
+
+                                <?php endif;?>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="<?php if($banner1_count > 0 or $banner2_count > 0): echo 'col-lg-3'; else: echo 'col-lg-5'; endif;?> col-xs-12">
+
+                        <div class="thumbnail store style1">
+                            <div class="caption">
+                                <h6 class="regular"><?php echo $valor['opcao'];?></h6>
+                                <?php if(!empty($valor['valor']) and $valor['valor'] > 0):?>
+                                <div class="price">
+                                    <?php
+if (!empty($valor['desconto'])):
+
+$valores = $valor['desconto'];
+
+    $vlr = number_format($valores,2,'.','');
+
+                                    ?>
+                                    <h5 class="amount off text-gray">de R$<?php echo number_format($valor['valor'],2,'.','');?></h5>
+                                    <h5 class="amount text-primary">por R$<?php echo number_format($valores,2,'.','');?></h5>
+<?php else:
+    $vlr = number_format($valor['valor'],2,'.','');
+
+    ?>
+    <span class="amount text-primary"> R$<?php echo number_format($valor['valor'],2,'.','');?></span>
+
+
+
+<?php endif;?>
+                                </div>
+                                <?php endif;?>
+
+                                <?php if($valor['tipoProd'] == 1 or $valor['tipoProd'] == 2):?>
+                                    <a href="javascript:comprar(1,'<?php echo $vlr;?>');" class="btn btn-warning-outline semi-circle btn-md">COMPRAR ONLINE</a>
+                                <?php endif;?>
+
+                                <?php if($valor['tipoProd'] == 0  or $valor['tipoProd'] == 2):?>
+                                    <a href="javascript:pegar(1);" class="btn btn-warning-outline semi-circle btn-md">PEGAR DESCONTO</a>
+                                <?php endif;?>
+
+
+
+                                <?php if($valor['tipoProd'] == 3  or $valor['tipoProd'] == 2):?>
+                                    <a href="javascript:estouinteressado('<?php echo $this->uri->segment(2);?>');" class="btn btn-warning-outline semi-circle btn-md">ESTOU INTERESSADO</a>
+                                <?php endif;?>
+                            </div><!-- end caption -->
+
+                            <?php
+if (!empty($valor['valor2']) and !empty($valor['opcao2'])):
+?>
+                            <div class="caption">
+                                <h6 class="regular"><?php echo $valor['opcao2'];?></h6>
+                                <?php if(!empty($valor['valor2']) and $valor['valor2'] > 0):?>
+
+                                <div class="price">
+                                    <?php
+                                    if (!empty($valor['desconto2'])):
+
+                                        $valores = $valor['desconto2'];
+
+                                        $vlr = @$valores;
+                                        ?>
+                                        <h5 class="amount off text-gray">de R$<?php echo number_format($valor['valor2'],2,'.','');?></h5>
+                                        <h5 class="amount text-primary">por R$<?php echo @number_format($valores,2,'.','');?></h5>
+                                    <?php else:
+                                        $vlr = number_format($valor['valor2'],2,'.','');
+                                        ?>
+                                        <span class="amount text-primary"> R$<?php echo number_format($valor['valor2'],2,'.','');?></span>
+
+
+                                    <?php endif;?>
+                                </div>
+                                <?php endif;?>
+
+                                <?php if($valor['tipoProd'] == 1 or $valor['tipoProd'] == 2):?>
+                                    <a href="javascript:comprar(2,'<?php echo $vlr;?>');" class="btn btn-warning-outline semi-circle btn-md">COMPRAR ONLINE</a>
+                                <?php endif;?>
+
+                                <?php if($valor['tipoProd'] == 0  or $valor['tipoProd'] == 2):?>
+                                    <a href="javascript:pegar(2);" class="btn btn-warning-outline semi-circle btn-md">PEGAR DESCONTO</a>
+                                <?php endif;?>
+
+                                <?php if($valor['tipoProd'] == 3  or $valor['tipoProd'] == 2):?>
+                                    <a href="maito:<?php echo $empresa['email'];?>" class="btn btn-warning-outline semi-circle btn-md">ESTOU INTERESSADO</a>
+                                <?php endif;?>
+                                </div><!-- end caption -->
+<?php endif;?>
+                        </div>
+
+                        <div class="col-xs-12"><span style="font-size:16px;">EXPIRA EM:</span><br><b><span id="days" style="font-size:16px;">00</span> DIAS E <span id="hours" style="font-size:16px;">00</span>:<span id="minutes" style="font-size:16px;">00</span>:<span id="seconds" style="font-size:16px;">00</span></b></div>
+
+                        <div class="col-xs-12" style="padding-top:20px; padding-bottom:10px;">
+                            <span>Compartilhe esta oferta!</span>
+                            <div><a target="_blank" href="http://facebook.com/share.php?u=<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>" class="btn btn-warning-outline semi-circle btn-md"><i class="fa fa-facebook"></i></a></div>
+                        </div>
+
+
+                    </div>
+
+
+                    <?php if($banner1_count > 0 or $banner2_count > 0):?>
+                    <div class="col-lg-4 col-xs-12">
+                        <?php if($banner1_count > 0):?>
+                        <div id="carousel-offer" class="carousel slide" data-ride="carousel">
+                            <div id="sync4" class="owl-carousel owl-theme thumbs">
+
+                                <?php
+                                foreach ($banner1 as $value){
+                                    ?>
+                                    <div class="item" <?php if(!empty($value['linkButton'])): echo 'onclick="window.location.href=\''.$value['linkButton'].'\'"; style="cursor:pointer;"'; endif;?>>
+                                        <img style="height: 200px!important;" src="<?php echo base_url('web/imagens/'.$value['image']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';">
+                                    </div>
+                                <?php }?>
+                            </div>
+                        </div>
+
+<br>
+                <?php endif;?>
+
+                        <?php if($banner2_count > 0):?>
+                            <div id="carousel-offer" class="carousel slide" data-ride="carousel">
+                                <div id="sync3" class="owl-carousel owl-theme thumbs">
+
+
+                                    <?php
+                                    foreach ($banner2 as $value){
+                                    ?>
+                                        <div class="item" <?php if(!empty($value['linkButton'])): echo 'onclick="window.location.href=\''.$value['linkButton'].'\'"; style="cursor:pointer;"'; endif;?>>
+                                            <img style="height: 200px!important;" src="<?php echo base_url('web/imagens/'.$value['image']);?>" onerror="this.src='http://www.tourniagara.com/wp-content/uploads/2014/10/default-img.gif';">
+                                        </div>
+                                    <?php }?>
+
+
+
+                                </div>
+
+
+
+                                </div>
+                            </div>
+                        <?php endif;?>
+
+                    </div>
+                    <?php endif;?>
+
+                </div>
+            </div>
+
+            <div class="col-lg-12"></div>
+
+            <div class="col-sm-12">
+
+                <!-- Nav tabs -->                
+                <div class="row container">
+                <ul class="nav nav-tabs style1" role="tablist">
+                    <li role="presentation">
+                        <h6 class="text-uppercase">Sobre a Oferta</h6>
+                    </li>
+                </ul><!-- nav-tabs -->
+                <div class="tab-content4" style="padding-top:10px;">
+                    <div role="tabpanel" class="tab-pane fade in active" id="DIV001">
+                        <div class="col-lg-12"><?php echo $valor['descricao'];?></div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Nav tabs -->
+                <div class="row container" style="padding-top:20px;">
+                <ul class="nav nav-tabs style1" role="tablist">
+                    <li role="presentation">
+                        <h6 class="text-uppercase">Regras de Uso</h6>
+                    </li>
+                </ul><!-- nav-tabs -->
+                <div class="tab-content4" style="padding-top:10px;">
+                    <div role="tabpanel" class="tab-pane fade in active" id="DIV001">
+                        <div class="col-lg-12"><?php echo $valor['regras_de_uso'];?></div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Nav tabs -->
+                <div class="row container" style="padding-top:10px;">
+                <ul class="nav nav-tabs style1" role="tablist">
+                    <li role="presentation">
+                        <h6 class="text-uppercase">Regras de Uso Geral</h6>
+                    </li>
+                </ul><!-- nav-tabs -->
+                <div class="tab-content4" style="padding-top:10px;">
+                    <div role="tabpanel" class="tab-pane fade in active" id="DIV001">
+                        <div class="col-lg-12">
+                        	Cada oferta tem suas regras de uso e validade. Fique atento!
+                            <br><br>
+                            Salvo em casos específicos em que o regulamento da seção estabelece o contrário, algumas restrições se aplicam a todas as ofertas:
+                            <br><br>
+                            - As ofertas não são cumulativas com outras promoções do estabelecimento.<br>
+							- Observe a data de validade do seu cupom. A não utilização do cupom no prazo estabelecido implicará na perda do mesmo.<br>
+							- Não é válido para taxas de serviços<br>
+							- O valor total do cupom deverá ser gasto em uma única visita (não haverá troco ou crédito).<br>
+							- Cupons não utilizados no prazo não tem direito a reembolso.<br>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Nav tabs -->
+                <div class="row container" style="padding-top:30px;">
+                <ul class="nav nav-tabs style1" role="tablist">
+                    <li role="presentation">
+                        <h6 class="text-uppercase">Sobre a Empresa</h6>
+                    </li>
+                </ul><!-- nav-tabs -->
+                <div class="tab-content4" style="padding-top:10px;">
+                    <div role="tabpanel" class="tab-pane fade in active" id="DIV001">
+                        <div class="col-lg-12"><?php echo $empresa['descricao'];?></div>
+						<div class="col-lg-12" style="top:-40px;"><img src="../web/imagens/<?php echo $empresa['image'];?>" height="100" style="padding-bottom:20px;" /><br><b><?php echo $empresa['telefone'];?></b><br><?php echo $empresa['endereco'];?>, <?php echo $empresa['cidade'];?>, <?php echo $empresa['estado'];?></div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<?php
+$dataExpired = explode('/',$valor['valido']);
+
+$arr['01'] = 'jan';
+$arr['02'] = 'feb';
+$arr['03'] = 'mar';
+$arr['04'] = 'apr';
+$arr['05'] = 'may';
+$arr['06'] = 'june';
+$arr['07'] = 'july';
+$arr['08'] = 'aug';
+$arr['09'] = 'sept';
+$arr['10'] = 'oct';
+$arr['11'] = 'nov';
+$arr['12'] = 'dec';
+?>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("<?php echo $arr[$dataExpired[0]]?> <?php echo $dataExpired[1]?>, <?php echo $dataExpired[2]?> 12:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("seconds").innerHTML =  seconds;
+        document.getElementById("days").innerHTML =  days;
+        document.getElementById("hours").innerHTML =  hours;
+        document.getElementById("minutes").innerHTML =  minutes;
+
+
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("seconds").innerHTML =  '00';
+            document.getElementById("days").innerHTML =  '00';
+            document.getElementById("hours").innerHTML =  '00';
+            document.getElementById("minutes").innerHTML =  '00';
+        }
+    }, 1000);
+</script>
+
+<?php $this->load->view('site/fixed_files/footer'); ?>
+
+<script>
+    function comprar(tipo,valor) {
+
+        $.ajax({
+            url: '<?php echo base_url('Ajax/comprar')?>',
+            data: {id:'<?php echo $this->uri->segment(2);?>',tipo:tipo,valor:valor},
+            type: 'POST',
+            beforeSend: function () {
+                $('body').css('opacity','0.5');
+            },
+            error: function (res) {
+
+
+
+                $('body').css('opacity','1');
+
+            },
+            success: function (data) {
+
+                if(data == 11){
+
+                    window.location.href="<?php echo base_url('checkout')?>";
+
+                }else{
+
+
+                    Command: toastr["warning"](data);
+
+                    toastr.options = {
+                        "closeButton": false,
+                        "debug": false,
+                        "newestOnTop": false,
+                        "progressBar": false,
+                        "positionClass": "toast-top-right",
+                        "preventDuplicates": false,
+                        "onclick": null,
+                        "showDuration": "300",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    }
+                    $('body').css('opacity','1');
+
+                }
+
+
+
+            }
+        });
+
+
+    }
+
+
+    function pegar(tipo) {
+
+        $.ajax({
+            url: '<?php echo base_url('Ajax/pegarVoucher')?>',
+            data: {id:'<?php echo $this->uri->segment(2);?>',tipo:tipo},
+            type: 'POST',
+            beforeSend: function () {
+                $('body').css('opacity','0.5');
+            },
+            error: function (res) {
+
+
+
+                $('body').css('opacity','1');
+
+            },
+            success: function (data) {
+
+                if(data > 0 ){
+
+                    window.location.href="<?php echo base_url('comprovante/')?>"+data;
+
+                }else{
+
+                    Command: toastr["warning"](data);
+
+                    toastr.options = {
+                        "closeButton": false,
+                        "debug": false,
+                        "newestOnTop": false,
+                        "progressBar": false,
+                        "positionClass": "toast-top-right",
+                        "preventDuplicates": false,
+                        "onclick": null,
+                        "showDuration": "300",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    }
+                    $('body').css('opacity','1');
+
+                }
+
+
+
+            }
+        });
+
+
+    }
+
+    function estouinteressado(id){
+
+
+
+        $.ajax({
+            url: '<?php echo base_url('Ajax/interesseEnviar')?>',
+            data: {id:id,empresa:'<?php echo $empresa['email']?>'},
+            type: 'POST',
+            beforeSend: function () {
+                $('body').css('opacity','0.5');
+            },
+            error: function (res) {
+
+
+
+                $('body').css('opacity','1');
+
+            },
+            success: function (data) {
+
+                if(data == 11 ){
+
+
+                    Command: toastr["success"]('Mensagem enviada com sucesso! Em breve entraremos em contato. Obrigado!');
+
+                    toastr.options = {
+                        "closeButton": false,
+                        "debug": false,
+                        "newestOnTop": false,
+                        "progressBar": false,
+                        "positionClass": "toast-top-right",
+                        "preventDuplicates": false,
+                        "onclick": null,
+                        "showDuration": "300",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    }
+                    $('body').css('opacity','1');
+
+                }else{
+
+                    Command: toastr["warning"](data);
+
+                    toastr.options = {
+                        "closeButton": false,
+                        "debug": false,
+                        "newestOnTop": false,
+                        "progressBar": false,
+                        "positionClass": "toast-top-right",
+                        "preventDuplicates": false,
+                        "onclick": null,
+                        "showDuration": "300",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    }
+                    $('body').css('opacity','1');
+
+                }
+
+
+
+            }
+        });
+
+    }
+
+</script>

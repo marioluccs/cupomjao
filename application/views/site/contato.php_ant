@@ -1,0 +1,32 @@
+<?php $this->load->view('site/fixed_files/header'); ?>
+<!-- start section -->
+<section class="section white-backgorund" style="margin-top:-50px;">
+    <div class="container">
+<form method="post" action="javascript:formcontato();">
+
+    <div class="col-md-12">
+        <div class="form-group">
+            <label for="firstname">Nome Completo <span class="text-danger">*</span></label>
+            <input id="firstname" value="" type="text" placeholder="Nome Completo" name="nome" class="form-control input-sm required">
+        </div><!-- end form-group -->
+        <div class="form-group">
+            <label for="firstname">E-mail <span class="text-danger">*</span></label>
+            <input id="email" value="" type="email" placeholder="" name="email" class="form-control input-sm required">
+        </div><!-- end form-group -->
+        <div class="form-group">
+            <label for="lastname">Assunto <span class="text-danger">*</span></label>
+            <input id="lastname" value="" type="text" placeholder="Assunto" name="assunto" class="form-control input-sm required" >
+        </div><!-- end form-group -->
+        <div class="form-group">
+            <label for="email">Texto <span class="text-danger"></span></label>
+            <textarea  placeholder="" name="texto" class="form-control input-sm required email" style="height: 200px;"></textarea>
+        </div><!-- end form-group -->
+
+        <div class="form-group">
+            <a href="javascript:formcontato();" class="btn btn-default round btn-md"><i class="fa fa-save mr-5"></i> Salvar</a>
+        </div><!-- end form-group -->
+    </div><!-- end col -->
+
+</form>
+    </div></section>
+<?php $this->load->view('site/fixed_files/footer'); ?>
