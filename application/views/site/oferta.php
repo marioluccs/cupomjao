@@ -137,7 +137,7 @@ endif;
                                     <p class="regular" style="font-weight: 400;"><?php echo $valor['opcao'];?></p>
                                     <h6 class="regular"><?php echo $valor['opcao'];?></h6>
                                 </div>
-                                <div style="" class="row">
+                                <div style="display: none;" class="row">
                                     <div class="col-sm-4">
                                         <i class='fas fa-star' style="color: orange; font-size: 18px; "></i>
                                         <i class='fas fa-star' style="color: orange; font-size: 18px; "></i>
@@ -148,7 +148,7 @@ endif;
                                     <div class="col-sm-2 avaliacao" style="color:orange;">4,6</div>
                                     <div class="col-sm-4 avaliacao" style="margin-left: -51px!important;">(4460 Avaliações)</div>
                                 </div>
-                                <div class="row d-flex">
+                                <div class="row d-flex" style="display: none;">
                                     <i class='fas fa-fire col-sm-1' style="color: orange; font-size: 23px; "></i>
                                     <p class="col-sm-11" style="margin-left: -15px;">Mais de 1 Mil vendas</p>
                                 </div>
@@ -167,7 +167,7 @@ $valores = $valor['desconto'];
 
                                     ?>
                                     <div class="row">
-                                        <h5 class="amount off text-gray col-sm-4" style="float: left; font-size: 20px; font-weight: 400; float: left; margin-top: 21px; margin-left: -15px;">de R$<?php echo number_format($valor['valor'],2,'.','');?></h5>
+                                        <h5 class="amount off text-gray col-sm-4 textoh5" style="float: left; font-size: 20px; font-weight: 400; float: left; margin-top: 21px; margin-left: -15px;">de R$<?php echo number_format($valor['valor'],2,'.','');?></h5>
                                         <h5 class="amount text-primary col-sm-7" style="font-size: 34px; margin-left: -73px;">por R$<?php echo number_format($valores,2,'.','');?></h5>
                                     </div>
 <?php else:

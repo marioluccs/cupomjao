@@ -256,7 +256,7 @@ margin-bottom: 0px!important;
 }
 
 div .caption {
-    height: 120%!important;
+    height: 150%!important;
     margin-bottom: 10px;
 }
 
@@ -376,6 +376,7 @@ li::marker {
 }
 .caixa {
     width: 50%;
+    height: 178px!important;
 }
 .secaoresp{
     display: flex;
@@ -437,6 +438,42 @@ li::marker {
 }
 .whats {
     width: 100%!important;
+}
+.breadcrumb{
+    margin-top: 30px;
+}
+.caixavendas{
+    margin-top: -36px;
+} 
+.compartilheresp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.thumbnail.store .caption .price .amount.off {
+    margin-top: 21px!important;
+    margin-bottom: 51px!important;
+}
+.sobre i {
+padding-top: 0%!important;
+margin-bottom: 0%!important;
+}
+.sobre .col-sm-1 {
+margin-bottom: 0%!important;
+}
+.espaco {
+    height: 260px!important;
+    margin-bottom: 250px;
+}
+.price small {
+    margin-left: 0px!important;
+}
+.secaoresp{
+    margin-bottom: 149px!important;
+    height: 327px!important;
+}
+.textoh5 {
+    margin-left: 19px!important;
 }
 }
 @media only screen and (min-width: 300px) and (max-width: 423px) {
@@ -601,6 +638,36 @@ li::marker {
 .divletras {
     display: none!important;
 }
+.imagemcem {
+    margin-bottom: 0px!important;
+}
+.caixavendas{
+    width: 70%!important;
+} 
+
+.price h5 {
+    margin-left: 10px!important;
+}
+.textresponsivo {
+    margin-bottom: 0px!important;
+}
+.sobre i {
+padding-top: 0%!important;
+margin-bottom: 0%!important;
+}
+.sobre .col-sm-1 {
+margin-bottom: 0%!important;
+}
+.caixa {
+    height: 163px!important;
+}
+.thumbnail.store {
+    margin-bottom: 292px;
+}
+.secaoresp{
+    margin-bottom: 139px!important;
+    height: 327px!important;
+}
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -659,7 +726,9 @@ li::marker {
     margin-bottom: 50px;
 }
 .secaoresp {
-    margin-bottom: 50px;
+    margin-bottom: 30%;
+    display: flex;
+    justify-content: center;
 }
 .sobreposto h2{
     font-size: 15px!important;
@@ -703,12 +772,22 @@ li::marker {
     margin-left: 71px;
 }
 
-
+div .caption {
+    height: 128%!important;
+    margin-bottom: 10px;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 820px){
     .buscamargin{
         margin-right: 10px;
     }
+    div .caption {
+    height: 128%!important;
+    margin-bottom: 30px;
+}
+.secaoresp {
+    margin-bottom: 33%;
+}
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -776,6 +855,9 @@ li::marker {
     .minhaconta {
         width: 22%!important;
     }
+    .caixa {
+    height: 168px!important;
+}
 }
 @media only screen and (min-width: 1300px) {
     .parceirosbutton {
