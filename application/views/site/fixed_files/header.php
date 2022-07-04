@@ -351,6 +351,7 @@ li::marker {
     .swiper-container {
     margin-top: 40px;
 }
+
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -434,6 +435,9 @@ li::marker {
 .divletras {
     display: none!important;
 }
+.whats {
+    width: 100%!important;
+}
 }
 @media only screen and (min-width: 300px) and (max-width: 423px) {
     .secaoresp {
@@ -449,6 +453,9 @@ li::marker {
 }
 .navbar-brand>img {
     margin-top: -13px!important;
+}
+.whats {
+    width: 100%!important;
 }
 }
 @media only screen and (min-width: 424px) and (max-width: 500px) {
@@ -470,7 +477,9 @@ li::marker {
 .divletras {
     display: none!important;
 }
-
+.whats {
+    width: 100%!important;
+}
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
