@@ -412,7 +412,7 @@ li::marker {
 }
 .logoimage{
     object-fit: cover;
-    width: 20%;
+    width: 20%!important;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -430,6 +430,9 @@ li::marker {
 }
 .yamm .navbar-brand {
     float: left;
+}
+.divletras {
+    display: none!important;
 }
 }
 @media only screen and (min-width: 300px) and (max-width: 423px) {
@@ -464,6 +467,10 @@ li::marker {
 .navbar-brand>img {
     margin-top: -23px!important;
 }
+.divletras {
+    display: none!important;
+}
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -581,6 +588,9 @@ li::marker {
 
 .whats {
     width: 100%!important;
+}
+.divletras {
+    display: none!important;
 }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -754,10 +764,16 @@ li::marker {
     .secaoresp {
         margin-bottom: 30px!important;
     }
+    .minhaconta {
+        width: 22%!important;
+    }
 }
 @media only screen and (min-width: 1300px) {
     .parceirosbutton {
         margin-left: 0!important;
+    }
+    .minhaconta {
+        width: 22%!important;
     }
 }
 
