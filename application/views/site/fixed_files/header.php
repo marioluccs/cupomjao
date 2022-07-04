@@ -347,6 +347,10 @@ li::marker {
     display: none;
 }
 
+.divesconder{
+    display: none;
+}
+
 @media screen and (min-width: 1441px) {
     .swiper-container {
     margin-top: 40px;
@@ -475,6 +479,30 @@ margin-bottom: 0%!important;
 .textoh5 {
     margin-left: 19px!important;
 }
+.fa-shopping-cart:before {
+    content: "\f07a";
+    position: fixed;
+    height: 200%;
+    width: 200px;
+    font-size: 30px;
+    float: right;
+    margin-left: 60%;
+    margin-top: 640px;
+    color: #68CFFA;
+}
+.entrecadastrar{
+    padding-left: 8px;
+}
+.explorarcategorias{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-left: 210px;
+    margin-right: -70px;
+}
+.parceirosbutton {
+    margin-left: -65px;
+}
 }
 @media only screen and (min-width: 300px) and (max-width: 423px) {
     .secaoresp {
@@ -494,6 +522,36 @@ margin-bottom: 0%!important;
 .whats {
     width: 100%!important;
 }
+.fa-shopping-cart:before {
+    content: "\f07a";
+    position: fixed;
+    height: 200%;
+    width: 200px;
+    font-size: 30px;
+    float: right;
+    margin-left: 40%;
+    margin-top: 663px;
+    color: #68CFFA;
+}
+.entrecadastrar{
+    padding-left: 8px;
+}
+.explorarcategorias{
+    width: 100%;
+    justify-content: center;
+    display: grid!important;
+    margin-left: 177px!important;
+    margin-top: -9px!important;
+}
+
+.categoriasesconder {
+    margin-bottom: -10px!important;
+}
+
+.categoriasesconder {
+    margin-left: -65px!important;
+}
+
 }
 @media only screen and (min-width: 424px) and (max-width: 500px) {
     .secaoresp {
@@ -516,6 +574,33 @@ margin-bottom: 0%!important;
 }
 .whats {
     width: 100%!important;
+}
+.fa-shopping-cart:before {
+    content: "\f07a";
+    position: fixed;
+    height: 200%;
+    width: 200px;
+    font-size: 30px;
+    float: right;
+    margin-left: 50%!important;
+    margin-top: 663px;
+    color: #68CFFA;
+}
+.entrecadastrar{
+    padding-left: 8px;
+}
+.explorarcategorias{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-left: 170px;
+}
+.linkdown  {
+    margin-left: -27px;
+}
+
+.categoriasesconder {
+    margin-left: -62px;
 }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -668,6 +753,26 @@ margin-bottom: 0%!important;
     margin-bottom: 139px!important;
     height: 327px!important;
 }
+.fa-shopping-cart:before {
+    content: "\f07a";
+    position: fixed;
+    height: 200%;
+    width: 200px;
+    font-size: 30px;
+    float: right;
+    margin-left: 65%;
+    margin-top: 663px;
+    color: #68CFFA;
+}
+.entrecadastrar{
+    padding-left: 8px;
+}
+.explorarcategorias{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-left: 276px;
+}
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -776,6 +881,13 @@ div .caption {
     height: 128%!important;
     margin-bottom: 10px;
 }
+.contaesconde{
+    display: none;
+}
+.divesconde {
+    display: none;
+}
+
 }
 @media only screen and (min-width: 768px) and (max-width: 820px){
     .buscamargin{
@@ -787,6 +899,12 @@ div .caption {
 }
 .secaoresp {
     margin-bottom: 33%;
+}
+.contaesconde{
+    display: none;
+}
+.divesconde {
+    display: none;
 }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -837,7 +955,12 @@ div .caption {
 .minhaconta{
     width: 24%!important;
 }
-
+.contaesconde{
+    display: none;
+}
+.divesconde {
+    display: none;
+}
 }
 @media only screen and (min-width: 990px) and (max-width: 1020px){
     .divletras{
@@ -858,6 +981,12 @@ div .caption {
     .caixa {
     height: 168px!important;
 }
+.contaesconde{
+    display: none;
+}
+.divesconde {
+    display: none;
+}
 }
 @media only screen and (min-width: 1300px) {
     .parceirosbutton {
@@ -866,6 +995,12 @@ div .caption {
     .minhaconta {
         width: 22%!important;
     }
+    .contaesconde{
+    display: none;
+}
+.divesconde {
+    display: none;
+}
 }
 
     </style>
@@ -880,11 +1015,12 @@ div .caption {
 
 
 <!-- start navbar -->
+
 <div class="navbar yamm navbar-default" style="background: <?php echo COR2;?>!important;">
 <div class="container row align-items-center divlogo" style="width: 100%;">
 <div class="divflex">       
-<div class="navbar-header col-md-3 imageresp">
-            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle" style="background-color:#262d37; border:1px solid #262d37;">
+<div class="navbar-header col-md-3 imageresp" >
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" id="#navbar-collapse-1" class="navbar-toggle" style="background-color:#262d37; border:1px solid #262d37;display:none;">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -893,59 +1029,6 @@ div .caption {
                 <img src="<?php echo base_url('assets/site/')?>img/logo.png" width="100%" style="object-fit: cover; width: 20%; text-align: center; justify-content: center; align-items: center; display: flex; margin-left: 76%;" class="logoimage" alt="logo">
             </a>
 </div>
-
-<div id="navbar-collapse-1" class="navbar-collapse collapse col-md-12 minhaconta " style="margin:0; padding:0; display: none!important;">
-        <div class="col-sm-6 minhaconta" style="display: flex;">
-            <ul class="topBarNav pull-right col-6" style="list-style: none;">
-                    <li class="linkdown" style="list-style: none;">
-                        <a href="<?php echo base_url('minha-conta');?>">
-                            <i class="fa fa-user mr-5"></i>
-
-                        
-
-                            <?php
-                            if($this->SessionsVerify_Model->logVer() == true):
-                                $nameExplode = explode(' ',$_SESSION['NAME']);
-
-                                ?>
-                                <span class="hidden-xs">
-                                        Olá, <?php echo $nameExplode[0];?>
-                                    <i class="fa fa-angle-down ml-5"></i>
-                                    </span>
-
-                            <?php else:?>
-                                <span class="hidden-xs">
-                                        Minha Conta / Cadastro
-                                    <i class="fa fa-angle-down ml-5"></i>
-                                    </span>
-
-                            <?php endif;?>
-                        </a>
-                        <ul class="w-150" style="list-style: none;">
-                            <?php
-                            if($this->SessionsVerify_Model->logVer() == false):
-                            ?>
-                            <li><a href="<?php echo base_url('login');?>">Entrar</a></li>
-                            <li class="divider"></li>
-                            <li><a href="<?php echo base_url('cadastro');?>">Cadastrar</a></li>
-                            <li class="divider"></li>
-                            <?php else:?>
-                                <li><a href="<?php echo base_url('minha-conta/meus-dados');?>">Meus Dados</a></li>
-
-                                <li class="divider"></li>
-                                <li><a href="javascript:logout();">Sair</a></li>
-                                <li class="divider"></li>
-
-                            <?php endif;?>
-                        </ul>
-                        
-                    </li>
-                    <a href="">
-                    <i href="" class="fas fa-shopping-cart"></i>
-                    </a>
-                </ul>
-        </div>
-        </div>
 <div class="col-md-6 position">
             <div class="nav navbar-nav hidden-xs col-md-12 justify-content-start " style="padding-top:10px; float: left;">
                 <form action="<?php echo base_url('');?>">
@@ -1038,6 +1121,7 @@ div .caption {
         </div><!-- end navbar collapse -->
         
     </div><!-- end container -->
+    
     <!-- start topBar -->
 <div class="topBar" >
     <div class="row divletras" style="width: 100%; justify-content: center; display: flex;">
@@ -1214,7 +1298,172 @@ div .caption {
                 </ul>
         </div>
     </div><!-- end container -->
-    </div>
+    <div class="row divesconde" id="divesconde" style="width:300px; height: 50px; background-color: black;">
+    <div class="col-sm-6 minhaconta" style="display: flex; position: fixed;">
+            <ul class="pull-right col-12" style="list-style: none;">
+                    <li class="linkdown contaesconde" style="list-style: none;">
+                        <a href="<?php echo base_url('minha-conta');?>">
+                            <i class="fa fa-user mr-5" style="color:white;"></i>
+
+                        
+
+                            <?php
+                            if($this->SessionsVerify_Model->logVer() == true):
+                                $nameExplode = explode(' ',$_SESSION['NAME']);
+
+                                ?>
+                                <span class="hidden-xs">
+                                        Olá, <?php echo $nameExplode[0];?>
+                                    <i class="fa fa-angle-down ml-5"></i>
+                                    </span>
+
+                            <?php else:?>
+                                <span class="hidden-xs">
+                                        Minha Conta / Cadastro
+                                    <i class="fa fa-angle-down ml-5"></i>
+                                    </span>
+
+                            <?php endif;?>
+                        </a>
+                        <ul class="w-150 entrecadastrar" style="list-style: none; display: inline-block;">
+                            <?php
+                            if($this->SessionsVerify_Model->logVer() == false):
+                            ?>
+                            <li><a href="<?php echo base_url('login');?>">Entrar</a></li>
+                            
+                            <li><a href="<?php echo base_url('cadastro');?>">Cadastrar</a></li>
+                            
+                            <?php else:?>
+                                <li><a href="<?php echo base_url('minha-conta/meus-dados');?>">Meus Dados</a></li>
+
+                                <li class="divider"></li>
+                                <li><a href="javascript:logout();">Sair</a></li>
+                                <li class="divider"></li>
+
+                            <?php endif;?>
+                        </ul>
+                        <a href="">
+                        <i href="" class="fas fa-shopping-cart" style="color:white;"></i>
+                    </a>
+                    </li>
+                    
+                </ul>
+        </div>
+        <div class="row explorarcategorias" style="width: 100%; justify-content: center; display: flex;">
+        <div class="dropdown dropdowncustomizado col-sm-4 d-flex" style="margin-right: 4%; ">
+            <div class="" >
+                <button class="btn btn-default dropdown-toggle categoriasesconder"  type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Explorar Categorias
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu list-inline pull-left " aria-labelledby="dropdownMenu1" style="background-color: black!important;">
+                    <ul class="w-150" style="list-style: none; display: flex; padding: 0px;">
+                        <?php
+                        $this->db->from('categorias');
+                        $this->db->where('status',1);
+                        $this->db->where('id!=',17);
+                        $get = $this->db->get();
+                        $count = $get->num_rows();
+
+                        if($count > 0):
+
+                            $result = $get->result_array();
+
+                        foreach ($result as $value){
+                        ?>
+                        <div class="area" style="text-align: center; width: 15%;">
+                        <li class="sobreposto" style="font-size:11pt; float:left; padding: 10%;">
+                            <a href="<?php echo base_url('categoria/'.$value['id'])?>"> <img src="<?php echo base_url('web/imagens/'.$value['image'])?>" class="rounded-circle" style="width: 80%; border-radius: 50%; height: 80px;" alt="";><br></a>
+                            <h2 style="font-size: 18px; color: white; margin-top: 10%;"><?php echo $value['nome'];?></h2>
+                        </li>
+                        </div>
+                        <?php } endif;?>
+                    </ul>
+                    <ul class="list-inline pull-left ">
+                <ul class="topBarNav pull-right col-6">
+                </ul>
+                <div class="categoriasitem">
+                <?php
+                            $this->db->from('categorias');
+                            $this->db->where('status',1);
+                            $this->db->where('id!=',17);
+                            $get = $this->db->get();
+                            $count = $get->num_rows();
+
+                            if($count > 0):
+
+                                $result = $get->result_array();
+
+                            foreach ($result as $value){
+                            ?>
+                            <li><a href="<?php echo base_url('categoria/'.$value['id'])?>"><?php echo $value['nome'];?></a></li>
+
+
+                            <?php } endif;?></div>
+                        <ul class="topBarNav pull-right col-6">
+                    
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown dropdowncustomizado col-sm-4" style="margin-right: 4%; ">
+            <div class="" >
+                <button class="btn btn-default dropdown-toggle parceirosbutton" style="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Explorar Parceiros
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu list-inline pull-left " aria-labelledby="dropdownMenu1" style="background-color: black!important;">
+                    <ul class="w-150" style="list-style: none; display: flex; padding: 0px;">
+                        <?php
+                        $this->db->from('categorias');
+                        $this->db->where('status',1);
+                        $this->db->where('id!=',17);
+                        $get = $this->db->get();
+                        $count = $get->num_rows();
+
+                        if($count > 0):
+
+                            $result = $get->result_array();
+
+                        foreach ($result as $value){
+                        ?>
+                        <div class="area" style="text-align: center; width: 15%;">
+                        <li class="sobreposto" style="font-size:11pt; float:left; padding: 10%;">
+                            <a href="<?php echo base_url('categoria/'.$value['id'])?>"> <img src="<?php echo base_url('web/imagens/'.$value['image'])?>" class="rounded-circle" style="width: 80%; border-radius: 50%; height: 80px; border: 2px solid white;" alt="";><br></a>
+                            <h2 style="font-size: 18px; color: white; margin-top: 10%;"><?php echo $value['nome'];?></h2>
+                        </li>
+                        </div>
+                        <?php } endif;?>
+                    </ul>
+                    <ul class="list-inline pull-left">
+                <ul class="topBarNav pull-right col-6">
+                </ul>
+                <div class="categoriasitem">
+                <?php
+                            $this->db->from('categorias');
+                            $this->db->where('status',1);
+                            $this->db->where('id!=',17);
+                            $get = $this->db->get();
+                            $count = $get->num_rows();
+
+                            if($count > 0):
+
+                                $result = $get->result_array();
+
+                            foreach ($result as $value){
+                            ?>
+                            <li><a href="<?php echo base_url('categoria/'.$value['id'])?>"><?php echo $value['nome'];?></a></li>
+
+
+                            <?php } endif;?></div>
+                        <ul class="topBarNav pull-right col-6">
+                    
+                    </ul>
+                </ul>
+            </div>
+        </div>
+</div>   
+</div>
 </div>
 <!-- end topBar -->
 
@@ -1271,4 +1520,11 @@ $(document).ready(function () {
     })
 })
 </script>
+<script >
+    var $j = jQuery.noConflict();
+      $j("#navbar-collapse-1").on('change', function(){
+          $j(".divesconder").hide();
+          $j('#divesconder' + this.value).show();
+});
+  </script>
 
