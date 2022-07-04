@@ -670,7 +670,7 @@ li::marker {
     margin-left: -5px;
 }
 .minhaconta {
-    width: 30%!important;
+    width: 32%!important;
     margin-left: 100px;
 }
 .parceirosbutton {
