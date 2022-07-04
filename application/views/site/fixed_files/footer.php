@@ -46,17 +46,17 @@
             <div class="col-sm-3">
                 <h5 class="title" style="color:<?php echo COR3;?>!important;">Site 100% Seguro <i class='fas fa-lock'></i></h5>
                 <h5 class="title formas-de-pagamento" style="color:<?php echo COR3;?>!important;">Formas de Pagamento</h5>
-                <div><img src="<?php echo base_url('assets/site/')?>img/pagseguro.png" style="width:100%;"></div>
+                <div><img src="<?php echo base_url('assets/site/')?>img/pagseguro.png" class="pagseguro" style="width:100%;"></div>
                 <p style="color:<?php echo COR3;?>!important;"></p>
                 <p style="color:<?php echo COR3;?>!important;">PagSeguro Uol.</p>
-                <div><img src="<?php echo base_url('assets/site/')?>img/logo-conexaosegura.png" style="width:60%;"></div>
+                <div><img src="<?php echo base_url('assets/site/')?>img/logo-conexaosegura.png" class="conexaosegura" style="width:60%;"></div>
             </div><!-- end col -->
            
         </div><!-- end row -->
 
         <hr class="spacer-20">
 
-        <div class="row text-center">
+        <div class="row text-center resplogosite">
             <div class="col-sm-6">
             <a href="<?php echo base_url('')?>" class="navbar-brand justify-content-end">
                 <img src="<?php echo base_url('assets/site/')?>img/logo.png" width="100%" alt="logo">

@@ -8,7 +8,7 @@ $get = $this->db->get();
 if ($get->num_rows() > 0):
     ?>
     <!-- Swiper slider-->
-    <div class="swiper-container swiper-coverflow">
+    <div class="swiper-container swiper-coverflow bannermargin">
         <div class="swiper-wrapper">
 
             <?php
@@ -41,7 +41,7 @@ if ($get->num_rows() > 0):
     <div class="container">
                     <div class="title-wrap">
                         <h3 class="title lines">Categorias</h3>
-                        <ul class=" list-inline pull-left hidden-sm hidden-xs " aria-labelledby="dropdownMenu1" style="background-color: transparent!important; ">
+                        <ul class=" list-inline pull-left " aria-labelledby="dropdownMenu1" style="background-color: transparent!important; ">
                     <ul class="w-150" style="list-style: none; display: flex; padding: 0px;">
                         <?php
                         $this->db->from('categorias');
@@ -139,8 +139,8 @@ if ($get->num_rows() > 0):
             ?>
 
 
-                <div class="col-sm-6 col-md-3" style="margin-bottom: 30px!important;">
-                    <div class="thumbnail store caixa style1">
+                <div class="col-sm-6 col-md-3 secaoresp" style="">
+                    <div class="thumbnail store caixa style1 textoresponsivo">
                         <div class="header">
                             <div class="badges">
                                 <h6 class="product-badge top right primary-background text-white semi-circle"
@@ -209,7 +209,7 @@ if ($get->num_rows() > 0):
     if ($get->num_rows() > 0):
         ?>
         <!-- Swiper slider-->
-        <div class="swiper-container swiper-coverflow">
+        <div class="swiper-container swiper-coverflow bannermargin">
             <div class="swiper-wrapper">
 
                 <?php
@@ -322,8 +322,8 @@ if ($get->num_rows() > 0):
                         ?>
 
 
-                        <div class="col-sm-6 col-md-3" >
-                            <div class="thumbnail store style1">
+                        <div class="col-sm-6 col-md-3 secaoresp" >
+                            <div class="thumbnail store style1 textoresponsivo caixa">
                                 <div class="header">
                                     <div class="badges">
                                         <h6 class="product-badge top right primary-background text-white semi-circle"

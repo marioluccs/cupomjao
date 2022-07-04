@@ -343,6 +343,9 @@ div .caption {
 .categoriasitem li a:hover {
   color: #0072b1!important;
 }
+li::marker {
+    display: none;
+}
 
 @media screen and (min-width: 1441px) {
     .swiper-container {
@@ -356,7 +359,7 @@ div .caption {
         align-items: center!important;
         display: flex!important;
         padding-top: 20%!important;
-        margin-top: ;
+        
     }
     .logoimagelink img {
         margin-left: 18%!important;
@@ -364,6 +367,103 @@ div .caption {
     .logoimage {
         width: 25%!important;
     }
+    .section {
+    padding: 10px 0!important;
+}
+.categorias {
+    display: none;
+}
+.caixa {
+    width: 50%;
+}
+.secaoresp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 250px!important;
+}
+.baixarapp img {
+    width: 20%!important;
+}
+.resplogosite {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.text-sm {
+    margin-top: 6%!important;
+    padding: 0px 20px!important;
+}
+.pagseguro {
+    width: 40%!important;
+}
+.conexaosegura {
+    width: 30%!important;
+}
+.sobreposto h2{
+    font-size: 10px!important;
+}
+.sobreposto img {
+    height: 40px!important;
+    width: 40px!important;
+}
+.bannermargin {
+    margin-bottom: 37px;
+}
+.logoimage{
+    object-fit: cover;
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 76%;
+    position: fixed;
+    /* float: left; */
+    height: 100px;
+    margin-left: 27px;
+    margin-right: 100px;
+    padding-left: -100px;
+}
+.logoimagelink{
+    margin-left: 32%;
+}
+.yamm .navbar-brand {
+    float: left;
+}
+}
+@media only screen and (min-width: 300px) and (max-width: 423px) {
+    .secaoresp {
+    width: 150%;
+    margin-left: -22%;
+}
+.sobreposto h2{
+    font-size: 7px!important;
+}
+.sobreposto img {
+    height: 30px!important;
+    width: 30px!important;
+}
+.navbar-brand>img {
+    margin-top: -13px!important;
+}
+}
+@media only screen and (min-width: 424px) and (max-width: 500px) {
+    .secaoresp {
+    width: 127%;
+    margin-left: -15%;
+}
+.sobreposto h2{
+    font-size: 8px!important;
+}
+.sobreposto img {
+    height: 30px!important;
+    width: 30px!important;
+}
+
+.navbar-brand>img {
+    margin-top: -23px!important;
+}
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -392,6 +492,89 @@ div .caption {
     justify-content: center;
     display: flex;
     }
+    .section {
+    padding: 0px 0!important;
+}
+.categorias {
+    display: none;
+}
+.yamm .navbar-toggle {
+    position: fixed;
+    margin-left: 35%;
+    margin-top: 0%;
+}
+.baixarapp img {
+    width: 20%!important;
+}
+.resplogosite {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.text-sm {
+    margin-top: 6%!important;
+    padding: 0px 20px!important;
+}
+.pagseguro {
+    width: 40%!important;
+}
+.conexaosegura {
+    width: 30%!important;
+}
+.secaoresp {
+    width: 150%;
+    margin-left: -22%;
+    display: flex;
+    margin-bottom: 1000px;
+    justify-content: center;
+}
+.product-badge {
+    right: 13px!important;
+}
+.thumbnail.store {
+    margin-bottom: 233px;
+}
+.espaco {
+    width: 301px;
+}
+.swiper-container{
+    margin-bottom: 40px!important;
+}
+.sobreposto h2{
+    font-size: 13px!important;
+}
+.sobreposto img {
+    height: 50px!important;
+    width: 50px!important;
+}
+.caixavendas {
+    width: 80%;
+}
+.imagemcem {
+    width: 100%!important;
+    display: flex!important;
+}
+.carrosselresponsivo{
+    width: 70%!important;
+}
+.textresponsivo {
+    display: flex!important;
+    justify-content: center!important;
+}
+.compartilheresp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.avaliacao{
+    margin-bottom: 0px!important;
+}
+.minhaconta i{
+    color: white;
+}
+.divletras{
+    width: 100%!important;
+}
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -445,6 +628,55 @@ div .caption {
 .textolink {
     margin-left: 57px;
 }
+.textoresponsivo {
+    width: 65%;
+    margin-bottom: 50px;
+}
+.secaoresp {
+    margin-bottom: 50px;
+}
+.sobreposto h2{
+    font-size: 15px!important;
+}
+.sobreposto img {
+    height: 70px!important;
+    width: 70px!important;
+}
+
+.caixavendas {
+    width: 55%;
+}
+.imagemcem {
+    width: 100%!important;
+    display: flex!important;
+}
+.carrosselresponsivo{
+    width: 55%!important;
+}
+
+.compartilheresp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.textresponsivo{
+    display: flex;
+    justify-content: center;
+}
+.divletras {
+    width: 100%!important;
+    justify-content: center;
+    display: flex;
+    margin-left: -5px;
+}
+.minhaconta {
+    width: 30%!important;
+    margin-left: 100px;
+}
+.parceirosbutton {
+    margin-left: 71px;
+}
+
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -462,13 +694,55 @@ div .caption {
     .element.style {
     height: 0px
 }
+.thumbnail.store .caption{
+    height: 133%!important;
+}
+.caixavendas {
+    width: 55%!important;
+}
+.imagemcem {
+    width: 100%!important;
+    display: flex!important;
+}
+.carrosselresponsivo{
+    width: 55%!important;
+}
+.textresponsivo {
+    display: flex!important;
+    justify-content: center!important;
+}
+.compartilheresp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.sobreposto h2{
+    font-size: 18px!important;
+}
+.sobreposto img {
+    height: 90px!important;
+    width: 90px!important;
+}
+.minhaconta{
+    width: 24%!important;
+}
+
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .parceirosbutton {
         margin-left: 6%!important;
     }
+    .secaoresp {
+        margin-bottom: 30px!important;
+    }
 }
+@media only screen and (min-width: 1300px) {
+    .parceirosbutton {
+        margin-left: 0!important;
+    }
+}
+
     </style>
     <style>
         #sync1 img{
@@ -485,7 +759,7 @@ div .caption {
 <div class="container row align-items-center divlogo" style="width: 100%;">
 <div class="divflex">       
 <div class="navbar-header col-md-3 imageresp">
-            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle" style="background-color:#262d37; border:1px solid #262d37; display: none;">
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle" style="background-color:#262d37; border:1px solid #262d37;">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -495,11 +769,58 @@ div .caption {
             </a>
 </div>
 
-        <div id="navbar-collapse-1" class="navbar-collapse collapse col-md-3" style="margin:0; padding:0;">
-        </div> 
-<div class="">
-           
-</div>
+<div id="navbar-collapse-1" class="navbar-collapse collapse col-md-12 minhaconta " style="margin:0; padding:0; display: none!important;">
+        <div class="col-sm-6 minhaconta" style="display: flex;">
+            <ul class="topBarNav pull-right col-6" style="list-style: none;">
+                    <li class="linkdown" style="list-style: none;">
+                        <a href="<?php echo base_url('minha-conta');?>">
+                            <i class="fa fa-user mr-5"></i>
+
+                        
+
+                            <?php
+                            if($this->SessionsVerify_Model->logVer() == true):
+                                $nameExplode = explode(' ',$_SESSION['NAME']);
+
+                                ?>
+                                <span class="hidden-xs">
+                                        Olá, <?php echo $nameExplode[0];?>
+                                    <i class="fa fa-angle-down ml-5"></i>
+                                    </span>
+
+                            <?php else:?>
+                                <span class="hidden-xs">
+                                        Minha Conta / Cadastro
+                                    <i class="fa fa-angle-down ml-5"></i>
+                                    </span>
+
+                            <?php endif;?>
+                        </a>
+                        <ul class="w-150" style="list-style: none;">
+                            <?php
+                            if($this->SessionsVerify_Model->logVer() == false):
+                            ?>
+                            <li><a href="<?php echo base_url('login');?>">Entrar</a></li>
+                            <li class="divider"></li>
+                            <li><a href="<?php echo base_url('cadastro');?>">Cadastrar</a></li>
+                            <li class="divider"></li>
+                            <?php else:?>
+                                <li><a href="<?php echo base_url('minha-conta/meus-dados');?>">Meus Dados</a></li>
+
+                                <li class="divider"></li>
+                                <li><a href="javascript:logout();">Sair</a></li>
+                                <li class="divider"></li>
+
+                            <?php endif;?>
+                        </ul>
+                        
+                    </li>
+                    <a href="">
+                    <i href="" class="fas fa-shopping-cart"></i>
+                    </a>
+                </ul>
+        </div>
+        </div>
 <div class="col-md-6 position">
             <div class="nav navbar-nav hidden-xs col-md-12 justify-content-start " style="padding-top:10px; float: left;">
                 <form action="<?php echo base_url('');?>">
@@ -521,7 +842,7 @@ div .caption {
             <ul class="nav navbar-nav navbar-right hidden-xs col-md-3 d-flex justify-content-center" style="background: <?php echo COR2;?>!important; margin-top: 25px;">
                 <div class="col-sm-12 links">
                     <a href="<?php echo base_url('')?>contato" class="col-sm-4 textolink textoa" style="color: white;"><li href="" class="letra faleconosco" style="color: white;">Fale Conosco</li></a>
-                    <a href="" class="col-sm-8 textolink" style="color: white;"><li style="color: white;" class="letra">Seja Nosso Parceiro</li></a>
+                    <a href="<?php echo base_url('')?>parceiro" class="col-sm-8 textolink" style="color: white;"><li style="color: white;" class="letra">Seja Nosso Parceiro</li></a>
                 </div>
             </ul>
             </div>
@@ -590,14 +911,14 @@ div .caption {
                 </li>
             </ul>
         </div><!-- end navbar collapse -->
-
+        
     </div><!-- end container -->
     <!-- start topBar -->
 <div class="topBar" >
     <div class="row divletras" style="width: 100%; justify-content: center; display: flex;">
         <div class="dropdown dropdowncustomizado col-sm-1 d-flex justify-content-end" style="margin-right: 4%; ">
             <div class="" >
-                <button class="btn btn-default dropdown-toggle"  type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <button class="btn btn-default dropdown-toggle categorias"  type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Explorar Categorias
                     <span class="caret"></span>
                 </button>
@@ -663,7 +984,7 @@ div .caption {
          </style>                           
          <div class="dropdown dropdowncustomizado col-sm-4" style="margin-right: 4%; ">
             <div class="" >
-                <button class="btn btn-default dropdown-toggle parceirosbutton" style="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <button class="btn btn-default dropdown-toggle parceirosbutton categorias" style="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Explorar Parceiros
                     <span class="caret"></span>
                 </button>
@@ -717,9 +1038,9 @@ div .caption {
                 </ul>
             </div>
         </div>
-        <div class="col-sm-3 minhaconta" style="float: left;">
-            <ul class="topBarNav pull-right col-6">
-                    <li class="linkdown">
+        <div class="col-sm-2 minhaconta" style="display: flex;">
+            <ul class="topBarNav pull-right col-6" style="list-style: none;">
+                    <li class="linkdown" style="list-style: none;">
                         <a href="<?php echo base_url('minha-conta');?>">
                             <i class="fa fa-user mr-5"></i>
 
@@ -743,7 +1064,7 @@ div .caption {
 
                             <?php endif;?>
                         </a>
-                        <ul class="w-150">
+                        <ul class="w-150" style="list-style: none;">
                             <?php
                             if($this->SessionsVerify_Model->logVer() == false):
                             ?>

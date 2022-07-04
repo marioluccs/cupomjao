@@ -3,41 +3,21 @@
 <section class="section white-backgorund" style="margin-top:-50px;">
     <div class="container">
 <form method="post" action="javascript:formcontato();">
-    <div class="col-md-12" style="margin-top: 20px;">
-        <h1 style="text-align: center; font-size: 30px;">CANAIS DE ATENDIMENTO</h1>
-        <hr style="width: 30%;"></hr>
-        <p style="text-align: center;">Qualquer dúvida pode falar com a gente através de um de<br> nossos canais e em breve responderemos!</p>
+    <div class="col-md-6" style="margin-top: 10%;">
+        <h1 style="text-align: left; font-size: 30px;">SEJA NOSSO PARCEIRO</h1>
+        <p style="text-align: left; font-size: 30px;">para <b>aumentar suas vendas</b> e <b>divulgar sua marca.</b></p>
+        <button style="border-radius: 10px; width: 60%; margin-top: 6%;">
+            <label for="" style="padding: 5px; font-size: 20px;">Ok, quero ser um parceiro</label>
+        </button>
     </div>
-    <div class="col-md-12 row d-flex justify-content-center align-items-center" style="margin-top: 10%; margin-bottom: 10%;">
-        <div class="col-md-6">
-            <img src="<?php echo base_url('assets/site/')?>img/atendimento.png" alt="">
-        </div>
-        <div class="col-md-6 row d-flex align-items-center">
-            <div>
-                <div class="col-sm-12 d-flex align-items-center justify-content-center" style="text-align: center;">
-                    <i class="fa fa-envelope" style="font-size: 60px;"></i>
-                    <p style="margin-bottom: -5px;">Email</p>
-                    <p><b>atendimento@newcommerce.com.br</b></p>
-                </div>
-            </div>
-            <div class="col-sm-12" style="text-align:center; margin-top: 40px;">
-                <div class="col-sm-6">
-                    <i class="fab fa-whatsapp" style="font-size: 60px;"></i>
-                    <p style="margin-bottom: -5px;">Whatsapp</p>
-                    <p><b>(33) 9 9876-0905</b></p>
-                </div>
-                <div class="col-sm-6">
-                    <i class="fas fa-phone-volume" style="font-size: 60px;"></i>
-                    <p style="margin-bottom: -5px;">Contato</p>
-                    <p><b>(33) 9 9876-0905</b></p>
-                </div>
-            </div>
-        </div>
+    <div class="col-md-6">
+        <img src="<?php echo base_url('assets/site/')?>img/negocios.png" alt="">
     </div>
+    
     <div class="col-md-12">
-        <h1 style="text-align: center; font-size: 30px;">FORMULÁRIO DE CONTATO</h1>
+        <h1 style="text-align: center; font-size: 30px;">PARCERIAS DE SUCESSO</h1>
         <hr style="width: 30%;"></hr>
-        <p style="text-align: center;">Se preferir preencha o formulário abaixo para falar conosco.<br>Retornaremos o seu contato o mais breve possível!</p>
+        <p style="text-align: center;">Preencha o formulário e entraremos em contato!</p>
     </div>
     <div class="col-md-12" style="border: 1px solid black; border-radius: 10px; padding: 20px; margin-top: 30px;">
         <div class="form-group col-sm-6">
@@ -50,10 +30,25 @@
             <input id="email" value="" type="email" placeholder="E-mail" name="email" class="form-control input-sm required" style="height:60px; font-size: 20px; border-radius: 10px;">
         </div><!-- end form-group -->
         <div class="form-group col-sm-6">
-            <input id="lastname" value="" type="text" placeholder="Assunto" name="assunto" class="form-control input-sm required" style="height:60px; font-size: 20px; border-radius: 10px;">
+            <input id="nomempresa" value="" type="text" placeholder="Nome da Empresa" name="nomempresa" class="form-control input-sm required" style="height:60px; font-size: 20px; border-radius: 10px;">
+        </div><!-- end form-group -->
+        <div class="form-group col-sm-6">
+            <input id="ramodeatividade" value="" type="text" placeholder="Ramo de Atividade" name="ramodeatividade" class="form-control input-sm required" style="height:60px; font-size: 20px; border-radius: 10px;">
+        </div><!-- end form-group -->
+        <div class="form-group col-sm-6">
+            <input id="facebook" value="" type="text" placeholder="Facebook" name="facebook" class="form-control input-sm required" style="height:60px; font-size: 20px; border-radius: 10px;">
+        </div><!-- end form-group -->
+        <div class="form-group col-sm-6">
+            <input id="instagram" value="" type="text" placeholder="Instagram" name="instagram" class="form-control input-sm required" style="height:60px; font-size: 20px; border-radius: 10px;">
+        </div><!-- end form-group -->
+        <div class="form-group col-sm-6">
+            <input id="endereco" value="" type="text" placeholder="Endereço" name="endereco" class="form-control input-sm required" style="height:60px; font-size: 20px; border-radius: 10px;">
+        </div><!-- end form-group -->
+        <div class="form-group col-sm-6">
+            <input id="bairro" value="" type="text" placeholder="Bairro" name="bairro" class="form-control input-sm required" style="height:60px; font-size: 20px; border-radius: 10px;">
         </div><!-- end form-group -->
         <div class="form-group col-sm-12">
-            <textarea  placeholder="Mensagem" name="texto" class="form-control input-sm required email" style="height: 200px; border-radius: 10px; font-size: 20px;"></textarea>
+            <textarea  placeholder="O que gostaria de oferecer ?" name="texto" class="form-control input-sm required email" style="height: 200px; border-radius: 10px; font-size: 20px;"></textarea>
         </div><!-- end form-group -->
 
         <div class="form-group col-sm-12" style="width: 100%;">

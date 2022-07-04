@@ -74,18 +74,7 @@ class Site extends CI_Controller {
 
     public function parceiro()
     {
-        $this->db->from('config');
-        $this->db->order_by('id','desc');
-        $this->db->limit(1,0);
-        $get = $this->db->get();
-        if($get->num_rows() > 0):
-
-            $result = $get->result_array();
-            if (!defined('SITE_NAME')) {
-                define('SITE_NAME',''.$result[0]['SITE_NAME'].'');
-            }
-
-        endif;
+        
 
         $this->load->view('site/parceiro');
     }

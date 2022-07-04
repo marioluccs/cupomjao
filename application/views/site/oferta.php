@@ -68,8 +68,8 @@ endif;
             <div class="col-lg-12">
                 <div class="row">
 
-                    <div class="<?php if($banner1_count > 0 or $banner2_count > 0): echo 'col-sm-5'; else: echo 'col-sm-7'; endif;?>  col-xs-12">
-                        <div id="carousel-offer" class="carousel slide" data-ride="carousel">
+                    <div class="<?php if($banner1_count > 0 or $banner2_count > 0): echo 'col-sm-5'; else: echo 'col-sm-7'; endif;?>  col-xs-12 imagemcem">
+                        <div id="carousel-offer" class="carousel slide carrosselresponsivo" data-ride="carousel">
                             <div id="sync1" class="owl-carousel owl-theme thumbs">
 
 
@@ -131,8 +131,8 @@ endif;
 
                     <div class="<?php if($banner1_count > 0 or $banner2_count > 0): echo 'col-lg-3'; else: echo 'col-lg-5'; endif;?> col-xs-12">
 
-                        <div class="thumbnail store style1">
-                            <div class="caption">
+                        <div class="thumbnail store style1 textresponsivo">
+                            <div class="caption caixavendas ">
                                 <div style="margin-left: 15px;">
                                     <p class="regular" style="font-weight: 400;"><?php echo $valor['opcao'];?></p>
                                     <h6 class="regular"><?php echo $valor['opcao'];?></h6>
@@ -213,7 +213,7 @@ $valores = $valor['desconto'];
                             <?php
 if (!empty($valor['valor2']) and !empty($valor['opcao2'])):
 ?>
-                            <div class="caption">
+                            <div class="caption ">
                                 <h6 class="regular"><?php echo $valor['opcao2'];?></h6>
                                 <?php if(!empty($valor['valor2']) and $valor['valor2'] > 0):?>
 
@@ -255,7 +255,7 @@ if (!empty($valor['valor2']) and !empty($valor['opcao2'])):
                         <div class="col-xs-12 tempo" style="text-align: center;"><span style="font-size:35px; color: #9337ba;;">EXPIRA EM:</span><br><b><span id="days" style="font-size:35px;">00</span> DIAS E <span id="hours" style="font-size:35px;">00</span>:<span id="minutes" style="font-size:35px;">00</span>:<span id="seconds" style="font-size:35px;">00</span></b></div>
 
                     </div>
-                    <div class="col-xs-7" style="padding-top:20px; padding-bottom:10px;">  
+                    <div class="col-xs-7 compartilheresp" style="padding-top:20px; padding-bottom:10px;">  
                         
                             <div style="border-bottom: 1px solid black; border-top: 1px solid black; padding: 10px;"><a target="_blank" href="http://facebook.com/share.php?u=<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>">
                                 <span class="button" style="font-weight: bolder;">Compartilhe esta oferta:</span>
