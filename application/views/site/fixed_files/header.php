@@ -522,8 +522,8 @@ li::marker {
     width: 30%!important;
 }
 .secaoresp {
-    width: 150%;
-    margin-left: -22%;
+    width: 100%;
+    margin-left: 0%;
     display: flex;
     margin-bottom: 1000px;
     justify-content: center;
@@ -573,6 +573,13 @@ li::marker {
     color: white;
 }
 .divletras{
+    width: 100%!important;
+}
+.divlogo{
+    width: 100%!important;
+}
+
+.whats {
     width: 100%!important;
 }
 }
@@ -677,6 +684,12 @@ li::marker {
     margin-left: 71px;
 }
 
+
+}
+@media only screen and (min-width: 768px) and (max-width: 820px){
+    .buscamargin{
+        margin-right: 10px;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -727,6 +740,11 @@ li::marker {
     width: 24%!important;
 }
 
+}
+@media only screen and (min-width: 990px) and (max-width: 1020px){
+    .divletras{
+        width: 104%!important;
+    }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -826,7 +844,7 @@ li::marker {
                 <form action="<?php echo base_url('');?>">
                     <div class="row grid-space-2 espacamento">
                         <div class="col-xs-12 busca">
-                        <div class="input-group">  
+                        <div class="input-group buscamargin">  
                         <input type="text" name="keyword" class="form-control input-lg semi-circle" placeholder="Buscar oferta..." style="border:0px; border-radius:0px 0px 0px 0px; -webkit-border-radius:5px; -moz-border-radius:5px;" <?php if(isset($_GET['keyword']) and !empty($_GET['keyword'])): echo 'value="'.$_GET['keyword'].'"'; endif;?>>
                             <span class="input-group-addon">
                                 <button class="fa fa-search" style="background:transparent;border:none" value="Buscar"></button>
